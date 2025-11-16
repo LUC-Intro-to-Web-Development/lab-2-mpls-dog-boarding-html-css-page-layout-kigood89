@@ -37,3 +37,19 @@ footer {
     padding-top: 40px;
     border: 2px solid black;
 }
+/* HEADER IMAGE */
+header img {
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+/* FLEX CONTAINER */
+#flexcontainer {
+    display: flex;             /* children become flex items */
+    flex-wrap: wrap;           /* allows wrapping */
+    width: 100%;
+    background-image: url("images/dog_bg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
