@@ -1,0 +1,39 @@
+/* GOOGLE FONT */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* CONTAINER GRID */
+#container {
+    display: grid;
+
+    /* 3 equal columns */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* 105px / auto / 15% rows */
+    grid-template-rows: 105px auto 15%;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/* PLACE ITEMS IN GRID */
+header {
+    grid-column: 1 / 4; /* all 3 columns */
+    grid-row: 1 / 2;
+    border: 2px solid black;
+}
+
+main {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    border: 2px solid black;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    padding-top: 40px;
+    border: 2px solid black;
+}
