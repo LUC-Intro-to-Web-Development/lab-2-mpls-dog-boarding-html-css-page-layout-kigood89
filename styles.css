@@ -52,4 +52,19 @@ header img {
     background-position: center;
     background-size: cover;
 }
-
+footer #copyright {
+    width: 275px;
+    margin: auto;
+    border: none;
+}
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    height: 105px;                /* required */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;             /* prevents logo overflow */
+    background-color: white;      /* matches example */
+    border: 2px solid black;      /* required border */
+}
