@@ -1,0 +1,77 @@
+/* GOOGLE FONT */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+
+
+/* CONTAINER GRID */
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    grid-template-rows: 105px auto 15%; /* header / main / footer */
+    width: 100vw;
+    height: 100vh;
+    gap: 10px; /* optional spacing between rows */
+}
+
+/* HEADER */
+header {
+    grid-column: 1 / 4;  /* spans all 3 columns */
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;     /* prevents logo overflow */
+    background-color: white;
+    border: 2px solid black;
+}
+
+header img {
+    display: block;
+    max-width: 200px;  /* prevents it from being too big */
+    height: auto;
+}
+
+/* MAIN FLEX CONTAINER */
+main {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: flex;          /* flex container for asides */
+    flex-wrap: wrap;        /* allows wrapping on small screens */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-image: url("images/dog_bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+/* EACH ASIDE */
+main aside {
+    flex: 1 1 30%;          /* grow/shrink, min 30% width */
+    background-color: rgba(255, 255, 255, 0.9); /* makes text readable over bg */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 0;
+}
+
+footer #copyright {
+    margin: 0;
+    font-size: 0.9em;
+}
